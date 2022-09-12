@@ -48,3 +48,11 @@ Code example
                                 }
                             }
                             preloadImages("логотип.jpg "," main_bg.jpg "," body_bg.jpg "," header_bg.jpg ");"
+
+---
+
+Education
+
+Kyiv university of Civil Aviation
+Aircraft electronics engineer
+Years: 1991 - 1997
