@@ -144,14 +144,17 @@
                     <h2 class="code_example" id="code_example">Code example</h2>
                     <pre class="code_example_list">
                         <code>
-                            "var images = new Array();
-                            function preloadImages(){
-                                for (i=0; i &lt; preloadImages.arguments.length; i++){
-                                     images[i] = new Image();
-                                    images[i].src = preloadImages.arguments[i];
-                                }
-                            }
-                            preloadImages("logo.jpg "," main_bg.jpg "," body_bg.jpg "," header_bg.jpg ");"
+                            "function add(num1, num2) {
+                                num1 = ('' + num1).split('').reverse()
+                                num2 = ('' + num2).split('').reverse()
+                                let max = Math.max(num1.length, num2.length)
+                                let str = [];
+                                for(let i = 0; i < max; i++)
+                                  str.push((parseInt(num1[i]) || 0) + (parseInt(num2[i]) || 0))
+                                num1 = str.reverse().join('');
+                                return parseInt(num1);
+                                return num1 + num2;
+                              };"
                         </code>
                     </pre>
                 </section>
