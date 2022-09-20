@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="./image/favicon.png">
     <title>CV</title>
 </head>
 <body>
@@ -43,10 +44,10 @@
             </nav>
         </header>
         <main>
-            <section class="about">
-                <section class="about_photo">
-                    <img src="./image/Anatolii _Veretennikov.png" alt="Photo by Anatolii Veretennikov">
-                </section>
+            <div class="about">
+                <div class="about_photo">
+                    <img src="./image/Anatolii_Veretennikov.png" alt="Photo by Anatolii Veretennikov">
+                </div>
                 <section class="contacts" id="contact">
                     <h2 class="about_contacts">Contacts</h2>
                     <div class="underlined"></div>
@@ -99,12 +100,12 @@
                         </li>
                     </ul>
                 </section>
-            </section>
+            </div>
             <section class="about_me" id="about_me">
-                <section class="person">
+                <div class="person">
                     <h1 class="person_header">Anatolii <br>Veretennikov</h1>
                     <h3 class="person_label">Junior Front-End Developer</h3>
-                </section>
+                </div>
                 <section class="about_me_personal" id="about_me_personal">
                     <h2 class="about_me_personal_header">About me</h2>
                     <p class="about_me_personal_header_text">Gaining experience, working first as an ordinary engineer, salesman, regional manager, deputy director, I always wanted something new, interesting, to keep up with the times.
@@ -150,7 +151,7 @@
                                 let max = Math.max(num1.length, num2.length)
                                 let str = [];
                                 for(let i = 0; i &lt; max; i++)
-                                  str.push((parseInt(num1[i]) || 0) + (parseInt(num2[i]) || 0))
+                                str.push((parseInt(num1[i]) || 0) + (parseInt(num2[i]) || 0))
                                 num1 = str.reverse().join('');
                                 return parseInt(num1);
                                 return num1 + num2;
